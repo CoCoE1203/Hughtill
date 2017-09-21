@@ -8,26 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		41F00D901F73B28600E49C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D8F1F73B28600E49C1B /* main.m */; };
-		41F00D931F73B28600E49C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D921F73B28600E49C1B /* AppDelegate.m */; };
-		41F00D961F73B28600E49C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D951F73B28600E49C1B /* ViewController.m */; };
 		41F00D991F73B28600E49C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D971F73B28600E49C1B /* Main.storyboard */; };
 		41F00D9C1F73B28600E49C1B /* Hughtill.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */; };
 		41F00D9E1F73B28600E49C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D9D1F73B28600E49C1B /* Assets.xcassets */; };
 		41F00DA11F73B28600E49C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */; };
+		41F00DAF1F73B64C00E49C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAA1F73B64C00E49C1B /* AppDelegate.m */; };
+		41F00DB01F73B64C00E49C1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41F00DAB1F73B64C00E49C1B /* Info.plist */; };
+		41F00DB11F73B64C00E49C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAC1F73B64C00E49C1B /* main.m */; };
+		41F00DB21F73B64C00E49C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAE1F73B64C00E49C1B /* ViewController.m */; };
+		41F00DB51F73B68B00E49C1B /* HTills.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DB41F73B68B00E49C1B /* HTills.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		41F00D8B1F73B28600E49C1B /* Hughtill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hughtill.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F00D8F1F73B28600E49C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41F00D911F73B28600E49C1B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		41F00D921F73B28600E49C1B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41F00D941F73B28600E49C1B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41F00D951F73B28600E49C1B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		41F00D981F73B28600E49C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hughtill.xcdatamodel; sourceTree = "<group>"; };
-		41F00D9D1F73B28600E49C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		41F00D9D1F73B28600E49C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
 		41F00DA01F73B28600E49C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		41F00DA21F73B28600E49C1B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F00DA91F73B64C00E49C1B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		41F00DAA1F73B64C00E49C1B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		41F00DAB1F73B64C00E49C1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		41F00DAC1F73B64C00E49C1B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		41F00DAD1F73B64C00E49C1B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		41F00DAE1F73B64C00E49C1B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		41F00DB31F73B68B00E49C1B /* HTills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTills.h; sourceTree = "<group>"; };
+		41F00DB41F73B68B00E49C1B /* HTills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTills.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,15 +66,9 @@
 		41F00D8D1F73B28600E49C1B /* Hughtill */ = {
 			isa = PBXGroup;
 			children = (
-				41F00D911F73B28600E49C1B /* AppDelegate.h */,
-				41F00D921F73B28600E49C1B /* AppDelegate.m */,
-				41F00D941F73B28600E49C1B /* ViewController.h */,
-				41F00D951F73B28600E49C1B /* ViewController.m */,
-				41F00D971F73B28600E49C1B /* Main.storyboard */,
-				41F00D9D1F73B28600E49C1B /* Assets.xcassets */,
-				41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */,
-				41F00DA21F73B28600E49C1B /* Info.plist */,
-				41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */,
+				41F00DB31F73B68B00E49C1B /* HTills.h */,
+				41F00DB41F73B68B00E49C1B /* HTills.m */,
+				41F00DA81F73B62C00E49C1B /* init */,
 				41F00D8E1F73B28600E49C1B /* Supporting Files */,
 			);
 			path = Hughtill;
@@ -80,6 +80,23 @@
 				41F00D8F1F73B28600E49C1B /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		41F00DA81F73B62C00E49C1B /* init */ = {
+			isa = PBXGroup;
+			children = (
+				41F00DA91F73B64C00E49C1B /* AppDelegate.h */,
+				41F00DAA1F73B64C00E49C1B /* AppDelegate.m */,
+				41F00DAB1F73B64C00E49C1B /* Info.plist */,
+				41F00DAC1F73B64C00E49C1B /* main.m */,
+				41F00DAD1F73B64C00E49C1B /* ViewController.h */,
+				41F00DAE1F73B64C00E49C1B /* ViewController.m */,
+				41F00D971F73B28600E49C1B /* Main.storyboard */,
+				41F00D9D1F73B28600E49C1B /* Assets.xcassets */,
+				41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */,
+				41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */,
+			);
+			path = init;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +157,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41F00DB01F73B64C00E49C1B /* Info.plist in Resources */,
 				41F00DA11F73B28600E49C1B /* LaunchScreen.storyboard in Resources */,
 				41F00D9E1F73B28600E49C1B /* Assets.xcassets in Resources */,
 				41F00D991F73B28600E49C1B /* Main.storyboard in Resources */,
@@ -153,10 +171,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F00D961F73B28600E49C1B /* ViewController.m in Sources */,
-				41F00D931F73B28600E49C1B /* AppDelegate.m in Sources */,
 				41F00D9C1F73B28600E49C1B /* Hughtill.xcdatamodeld in Sources */,
+				41F00DB51F73B68B00E49C1B /* HTills.m in Sources */,
 				41F00D901F73B28600E49C1B /* main.m in Sources */,
+				41F00DB11F73B64C00E49C1B /* main.m in Sources */,
+				41F00DAF1F73B64C00E49C1B /* AppDelegate.m in Sources */,
+				41F00DB21F73B64C00E49C1B /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,6 +189,7 @@
 				41F00D981F73B28600E49C1B /* Base */,
 			);
 			name = Main.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */ = {
@@ -177,6 +198,7 @@
 				41F00DA01F73B28600E49C1B /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -313,6 +335,7 @@
 				41F00DA71F73B28600E49C1B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
@@ -323,7 +346,8 @@
 				41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */,
 			);
 			currentVersion = 41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */;
-			path = Hughtill.xcdatamodeld;
+			name = Hughtill.xcdatamodeld;
+			path = ../Hughtill.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
