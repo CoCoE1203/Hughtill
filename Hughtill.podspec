@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hughtill"
-  s.version      = "0.0.1"
+  s.version      = "0.1.0"
   s.summary      = "Hugh Skill in Hughtill"
   s.description      = <<-DESC
 					Simple test the PodRegistTest!!!
@@ -11,7 +11,7 @@ Pod::Spec.new do |s|
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { "dragoaa90@gmail.com" => "dragoa90@gmail.com" }
   s.source       = { :git => "https://github.com/CoCoE1203/Hughtill.git", :tag => s.version }
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '7.0'
   s.source_files = 'Hughtill/Hughtill/Htills/*.{h,m}'
   s.requires_arc = true
 end
