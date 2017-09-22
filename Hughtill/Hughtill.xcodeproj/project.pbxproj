@@ -7,37 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		41F00D901F73B28600E49C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D8F1F73B28600E49C1B /* main.m */; };
-		41F00D991F73B28600E49C1B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D971F73B28600E49C1B /* Main.storyboard */; };
-		41F00D9C1F73B28600E49C1B /* Hughtill.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */; };
-		41F00D9E1F73B28600E49C1B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D9D1F73B28600E49C1B /* Assets.xcassets */; };
-		41F00DA11F73B28600E49C1B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */; };
-		41F00DAF1F73B64C00E49C1B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAA1F73B64C00E49C1B /* AppDelegate.m */; };
-		41F00DB01F73B64C00E49C1B /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41F00DAB1F73B64C00E49C1B /* Info.plist */; };
-		41F00DB11F73B64C00E49C1B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAC1F73B64C00E49C1B /* main.m */; };
-		41F00DB21F73B64C00E49C1B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DAE1F73B64C00E49C1B /* ViewController.m */; };
-		41F00DB51F73B68B00E49C1B /* HTills.m in Sources */ = {isa = PBXBuildFile; fileRef = 41F00DB41F73B68B00E49C1B /* HTills.m */; };
+		4126EE491F74AD0F0027EED3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4126EE481F74AD0F0027EED3 /* main.m */; };
+		4126EE4C1F74AD0F0027EED3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4126EE4B1F74AD0F0027EED3 /* AppDelegate.m */; };
+		4126EE4F1F74AD0F0027EED3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4126EE4E1F74AD0F0027EED3 /* ViewController.m */; };
+		4126EE521F74AD0F0027EED3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4126EE501F74AD0F0027EED3 /* Main.storyboard */; };
+		4126EE541F74AD0F0027EED3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4126EE531F74AD0F0027EED3 /* Assets.xcassets */; };
+		4126EE571F74AD0F0027EED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4126EE551F74AD0F0027EED3 /* LaunchScreen.storyboard */; };
+		4126EE611F74AD2D0027EED3 /* Htills.m in Sources */ = {isa = PBXBuildFile; fileRef = 4126EE601F74AD2D0027EED3 /* Htills.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41F00D8B1F73B28600E49C1B /* Hughtill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hughtill.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		41F00D8F1F73B28600E49C1B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41F00D981F73B28600E49C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Hughtill.xcdatamodel; sourceTree = "<group>"; };
-		41F00D9D1F73B28600E49C1B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../Assets.xcassets; sourceTree = "<group>"; };
-		41F00DA01F73B28600E49C1B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		41F00DA91F73B64C00E49C1B /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		41F00DAA1F73B64C00E49C1B /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		41F00DAB1F73B64C00E49C1B /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		41F00DAC1F73B64C00E49C1B /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		41F00DAD1F73B64C00E49C1B /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		41F00DAE1F73B64C00E49C1B /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		41F00DB31F73B68B00E49C1B /* HTills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTills.h; sourceTree = "<group>"; };
-		41F00DB41F73B68B00E49C1B /* HTills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTills.m; sourceTree = "<group>"; };
+		4126EE441F74AD0F0027EED3 /* Hughtill.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hughtill.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4126EE481F74AD0F0027EED3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4126EE4A1F74AD0F0027EED3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4126EE4B1F74AD0F0027EED3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4126EE4D1F74AD0F0027EED3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4126EE4E1F74AD0F0027EED3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4126EE511F74AD0F0027EED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4126EE531F74AD0F0027EED3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4126EE561F74AD0F0027EED3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4126EE581F74AD0F0027EED3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4126EE5F1F74AD2D0027EED3 /* Htills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Htills.h; sourceTree = "<group>"; };
+		4126EE601F74AD2D0027EED3 /* Htills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Htills.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		41F00D881F73B28600E49C1B /* Frameworks */ = {
+		4126EE411F74AD0F0027EED3 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,68 +42,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		41F00D821F73B28600E49C1B = {
+		4126EE3B1F74AD0F0027EED3 = {
 			isa = PBXGroup;
 			children = (
-				41F00D8D1F73B28600E49C1B /* Hughtill */,
-				41F00D8C1F73B28600E49C1B /* Products */,
+				4126EE461F74AD0F0027EED3 /* Hughtill */,
+				4126EE451F74AD0F0027EED3 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		41F00D8C1F73B28600E49C1B /* Products */ = {
+		4126EE451F74AD0F0027EED3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41F00D8B1F73B28600E49C1B /* Hughtill.app */,
+				4126EE441F74AD0F0027EED3 /* Hughtill.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41F00D8D1F73B28600E49C1B /* Hughtill */ = {
+		4126EE461F74AD0F0027EED3 /* Hughtill */ = {
 			isa = PBXGroup;
 			children = (
-				41F00DB31F73B68B00E49C1B /* HTills.h */,
-				41F00DB41F73B68B00E49C1B /* HTills.m */,
-				41F00DA81F73B62C00E49C1B /* init */,
-				41F00D8E1F73B28600E49C1B /* Supporting Files */,
+				4126EE5E1F74AD240027EED3 /* Htills */,
+				4126EE4A1F74AD0F0027EED3 /* AppDelegate.h */,
+				4126EE4B1F74AD0F0027EED3 /* AppDelegate.m */,
+				4126EE4D1F74AD0F0027EED3 /* ViewController.h */,
+				4126EE4E1F74AD0F0027EED3 /* ViewController.m */,
+				4126EE501F74AD0F0027EED3 /* Main.storyboard */,
+				4126EE531F74AD0F0027EED3 /* Assets.xcassets */,
+				4126EE551F74AD0F0027EED3 /* LaunchScreen.storyboard */,
+				4126EE581F74AD0F0027EED3 /* Info.plist */,
+				4126EE471F74AD0F0027EED3 /* Supporting Files */,
 			);
 			path = Hughtill;
 			sourceTree = "<group>";
 		};
-		41F00D8E1F73B28600E49C1B /* Supporting Files */ = {
+		4126EE471F74AD0F0027EED3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				41F00D8F1F73B28600E49C1B /* main.m */,
+				4126EE481F74AD0F0027EED3 /* main.m */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		41F00DA81F73B62C00E49C1B /* init */ = {
+		4126EE5E1F74AD240027EED3 /* Htills */ = {
 			isa = PBXGroup;
 			children = (
-				41F00DA91F73B64C00E49C1B /* AppDelegate.h */,
-				41F00DAA1F73B64C00E49C1B /* AppDelegate.m */,
-				41F00DAB1F73B64C00E49C1B /* Info.plist */,
-				41F00DAC1F73B64C00E49C1B /* main.m */,
-				41F00DAD1F73B64C00E49C1B /* ViewController.h */,
-				41F00DAE1F73B64C00E49C1B /* ViewController.m */,
-				41F00D971F73B28600E49C1B /* Main.storyboard */,
-				41F00D9D1F73B28600E49C1B /* Assets.xcassets */,
-				41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */,
-				41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */,
+				4126EE5F1F74AD2D0027EED3 /* Htills.h */,
+				4126EE601F74AD2D0027EED3 /* Htills.m */,
 			);
-			path = init;
+			path = Htills;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41F00D8A1F73B28600E49C1B /* Hughtill */ = {
+		4126EE431F74AD0F0027EED3 /* Hughtill */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F00DA51F73B28600E49C1B /* Build configuration list for PBXNativeTarget "Hughtill" */;
+			buildConfigurationList = 4126EE5B1F74AD0F0027EED3 /* Build configuration list for PBXNativeTarget "Hughtill" */;
 			buildPhases = (
-				41F00D871F73B28600E49C1B /* Sources */,
-				41F00D881F73B28600E49C1B /* Frameworks */,
-				41F00D891F73B28600E49C1B /* Resources */,
+				4126EE401F74AD0F0027EED3 /* Sources */,
+				4126EE411F74AD0F0027EED3 /* Frameworks */,
+				4126EE421F74AD0F0027EED3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -116,25 +109,25 @@
 			);
 			name = Hughtill;
 			productName = Hughtill;
-			productReference = 41F00D8B1F73B28600E49C1B /* Hughtill.app */;
+			productReference = 4126EE441F74AD0F0027EED3 /* Hughtill.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		41F00D831F73B28600E49C1B /* Project object */ = {
+		4126EE3C1F74AD0F0027EED3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0830;
 				ORGANIZATIONNAME = Hugh;
 				TargetAttributes = {
-					41F00D8A1F73B28600E49C1B = {
+					4126EE431F74AD0F0027EED3 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 41F00D861F73B28600E49C1B /* Build configuration list for PBXProject "Hughtill" */;
+			buildConfigurationList = 4126EE3F1F74AD0F0027EED3 /* Build configuration list for PBXProject "Hughtill" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -142,69 +135,64 @@
 				en,
 				Base,
 			);
-			mainGroup = 41F00D821F73B28600E49C1B;
-			productRefGroup = 41F00D8C1F73B28600E49C1B /* Products */;
+			mainGroup = 4126EE3B1F74AD0F0027EED3;
+			productRefGroup = 4126EE451F74AD0F0027EED3 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41F00D8A1F73B28600E49C1B /* Hughtill */,
+				4126EE431F74AD0F0027EED3 /* Hughtill */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		41F00D891F73B28600E49C1B /* Resources */ = {
+		4126EE421F74AD0F0027EED3 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F00DB01F73B64C00E49C1B /* Info.plist in Resources */,
-				41F00DA11F73B28600E49C1B /* LaunchScreen.storyboard in Resources */,
-				41F00D9E1F73B28600E49C1B /* Assets.xcassets in Resources */,
-				41F00D991F73B28600E49C1B /* Main.storyboard in Resources */,
+				4126EE571F74AD0F0027EED3 /* LaunchScreen.storyboard in Resources */,
+				4126EE541F74AD0F0027EED3 /* Assets.xcassets in Resources */,
+				4126EE521F74AD0F0027EED3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		41F00D871F73B28600E49C1B /* Sources */ = {
+		4126EE401F74AD0F0027EED3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				41F00D9C1F73B28600E49C1B /* Hughtill.xcdatamodeld in Sources */,
-				41F00DB51F73B68B00E49C1B /* HTills.m in Sources */,
-				41F00D901F73B28600E49C1B /* main.m in Sources */,
-				41F00DB11F73B64C00E49C1B /* main.m in Sources */,
-				41F00DAF1F73B64C00E49C1B /* AppDelegate.m in Sources */,
-				41F00DB21F73B64C00E49C1B /* ViewController.m in Sources */,
+				4126EE4F1F74AD0F0027EED3 /* ViewController.m in Sources */,
+				4126EE4C1F74AD0F0027EED3 /* AppDelegate.m in Sources */,
+				4126EE491F74AD0F0027EED3 /* main.m in Sources */,
+				4126EE611F74AD2D0027EED3 /* Htills.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		41F00D971F73B28600E49C1B /* Main.storyboard */ = {
+		4126EE501F74AD0F0027EED3 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41F00D981F73B28600E49C1B /* Base */,
+				4126EE511F74AD0F0027EED3 /* Base */,
 			);
 			name = Main.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
-		41F00D9F1F73B28600E49C1B /* LaunchScreen.storyboard */ = {
+		4126EE551F74AD0F0027EED3 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				41F00DA01F73B28600E49C1B /* Base */,
+				4126EE561F74AD0F0027EED3 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			path = ..;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		41F00DA31F73B28600E49C1B /* Debug */ = {
+		4126EE591F74AD0F0027EED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -252,7 +240,7 @@
 			};
 			name = Debug;
 		};
-		41F00DA41F73B28600E49C1B /* Release */ = {
+		4126EE5A1F74AD0F0027EED3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -294,24 +282,24 @@
 			};
 			name = Release;
 		};
-		41F00DA61F73B28600E49C1B /* Debug */ = {
+		4126EE5C1F74AD0F0027EED3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hughtill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = comHugh.Hughtill.Hughtill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hugh.Hughtill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
-		41F00DA71F73B28600E49C1B /* Release */ = {
+		4126EE5D1F74AD0F0027EED3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Hughtill/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = comHugh.Hughtill.Hughtill;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Hugh.Hughtill;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -319,39 +307,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41F00D861F73B28600E49C1B /* Build configuration list for PBXProject "Hughtill" */ = {
+		4126EE3F1F74AD0F0027EED3 /* Build configuration list for PBXProject "Hughtill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F00DA31F73B28600E49C1B /* Debug */,
-				41F00DA41F73B28600E49C1B /* Release */,
+				4126EE591F74AD0F0027EED3 /* Debug */,
+				4126EE5A1F74AD0F0027EED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F00DA51F73B28600E49C1B /* Build configuration list for PBXNativeTarget "Hughtill" */ = {
+		4126EE5B1F74AD0F0027EED3 /* Build configuration list for PBXNativeTarget "Hughtill" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				41F00DA61F73B28600E49C1B /* Debug */,
-				41F00DA71F73B28600E49C1B /* Release */,
+				4126EE5C1F74AD0F0027EED3 /* Debug */,
+				4126EE5D1F74AD0F0027EED3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		41F00D9A1F73B28600E49C1B /* Hughtill.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */,
-			);
-			currentVersion = 41F00D9B1F73B28600E49C1B /* Hughtill.xcdatamodel */;
-			name = Hughtill.xcdatamodeld;
-			path = ../Hughtill.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
-	rootObject = 41F00D831F73B28600E49C1B /* Project object */;
+	rootObject = 4126EE3C1F74AD0F0027EED3 /* Project object */;
 }

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "41F00D8A1F73B28600E49C1B"
+               BlueprintIdentifier = "4126EE431F74AD0F0027EED3"
                BuildableName = "Hughtill.app"
                BlueprintName = "Hughtill"
                ReferencedContainer = "container:Hughtill.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41F00D8A1F73B28600E49C1B"
+            BlueprintIdentifier = "4126EE431F74AD0F0027EED3"
             BuildableName = "Hughtill.app"
             BlueprintName = "Hughtill"
             ReferencedContainer = "container:Hughtill.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41F00D8A1F73B28600E49C1B"
+            BlueprintIdentifier = "4126EE431F74AD0F0027EED3"
             BuildableName = "Hughtill.app"
             BlueprintName = "Hughtill"
             ReferencedContainer = "container:Hughtill.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "41F00D8A1F73B28600E49C1B"
+            BlueprintIdentifier = "4126EE431F74AD0F0027EED3"
             BuildableName = "Hughtill.app"
             BlueprintName = "Hughtill"
             ReferencedContainer = "container:Hughtill.xcodeproj">
