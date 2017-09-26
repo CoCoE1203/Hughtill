@@ -9,7 +9,8 @@
 #import <Foundation/Foundation.h>
 
 @interface Htills : NSObject
-
+//clone create
+- (id) copy:(id)object;
 
 
     

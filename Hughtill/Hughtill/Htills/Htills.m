@@ -10,7 +10,11 @@
 
 @implementation Htills
 
-
+- (id) copy:(id)object
+{
+    id copyOfView = [NSKeyedUnarchiver unarchiveObjectWithData:[NSKeyedArchiver archivedDataWithRootObject:object]];
+    return copyOfView;
+}
 
 
 @end
