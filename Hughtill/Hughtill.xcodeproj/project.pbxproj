@@ -15,6 +15,7 @@
 		4126EE571F74AD0F0027EED3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4126EE551F74AD0F0027EED3 /* LaunchScreen.storyboard */; };
 		4126EE611F74AD2D0027EED3 /* Htills.m in Sources */ = {isa = PBXBuildFile; fileRef = 4126EE601F74AD2D0027EED3 /* Htills.m */; };
 		41503D581F74B5EB00363946 /* NSString+Htills.m in Sources */ = {isa = PBXBuildFile; fileRef = 41503D571F74B5EB00363946 /* NSString+Htills.m */; };
+		41986E331F7A1A6C004B4397 /* UITableView+Htills.m in Sources */ = {isa = PBXBuildFile; fileRef = 41986E321F7A1A6C004B4397 /* UITableView+Htills.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,8 @@
 		4126EE601F74AD2D0027EED3 /* Htills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Htills.m; sourceTree = "<group>"; };
 		41503D561F74B5EB00363946 /* NSString+Htills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+Htills.h"; sourceTree = "<group>"; };
 		41503D571F74B5EB00363946 /* NSString+Htills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Htills.m"; sourceTree = "<group>"; };
+		41986E311F7A1A6C004B4397 /* UITableView+Htills.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Htills.h"; sourceTree = "<group>"; };
+		41986E321F7A1A6C004B4397 /* UITableView+Htills.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Htills.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,8 @@
 				4126EE601F74AD2D0027EED3 /* Htills.m */,
 				41503D561F74B5EB00363946 /* NSString+Htills.h */,
 				41503D571F74B5EB00363946 /* NSString+Htills.m */,
+				41986E311F7A1A6C004B4397 /* UITableView+Htills.h */,
+				41986E321F7A1A6C004B4397 /* UITableView+Htills.m */,
 			);
 			path = Htills;
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 				4126EE4F1F74AD0F0027EED3 /* ViewController.m in Sources */,
 				4126EE4C1F74AD0F0027EED3 /* AppDelegate.m in Sources */,
 				4126EE491F74AD0F0027EED3 /* main.m in Sources */,
+				41986E331F7A1A6C004B4397 /* UITableView+Htills.m in Sources */,
 				41503D581F74B5EB00363946 /* NSString+Htills.m in Sources */,
 				4126EE611F74AD2D0027EED3 /* Htills.m in Sources */,
 			);

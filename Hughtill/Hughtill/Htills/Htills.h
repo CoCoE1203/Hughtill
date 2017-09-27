@@ -7,11 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h> 
 @interface Htills : NSObject
-//clone create
-- (id) copy:(id)object;
 
+//View Copy
++ (id) copy:(id)object;
 
-    
+//이미지 비율
++ (float) getImageSizeWidthRatio:(UIImage*)image;
++ (float) getImageSizeHeightRatio:(UIImage*)image;
+
 @end
