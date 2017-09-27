@@ -33,7 +33,7 @@
 }
 */
 
-+ (float) getImageSizeWidthRatio:(UIImage*)image
++ (float) getImageWidthRatio:(UIImage*)image
 {
     float imageWidth    = image.size.width;
     float deviceWidth   = [[UIScreen mainScreen] bounds].size.width;
@@ -41,7 +41,7 @@
     return ratioWidth;
 }
 
-+ (float) getImageSizeHeightRatio:(UIImage*)image
++ (float) getImageHeightRatio:(UIImage*)image
 {
     float imageHeight    = image.size.height;
     float deviceHeight   = [[UIScreen mainScreen] bounds].size.height;
@@ -49,5 +49,49 @@
     return ratioHeight;
 }
 
++ (float) getImageSizeWidthRatio:(UIImage*)image
+{
+    return [Htills getImageWidthRatio:image] * image.size.width;
+}
+
++ (float) getImageSizeHeightRatio:(UIImage*)image
+{
+    return [Htills getImageHeightRatio:image] * image.size.height;
+}
+
++ (CGSize) getImageRatioSize:(UIImage*)image
+{
+    CGSize imageSize = CGSizeZero;
+    BOOL isWidth = NO;
+    
+    isWidth = image.size.width > image.size.height ? YES : NO;
+    
+    if (isWidth)
+    {
+        float ratio = [Htills getImageSizeWidthRatio:image];
+        imageSize = CGSizeMake(image.size.width * ratio,
+                               image.size.height * ratio);
+    }
+    else
+    {
+        float ratio = [Htills getImageHeightRatio:image];
+        imageSize = CGSizeMake(image.size.width * ratio,
+                               image.size.height * ratio);
+        
+    }
+    
+    
+    return imageSize;
+}
 @end
+
+
+
+
+
+
+
+
+
+
 
