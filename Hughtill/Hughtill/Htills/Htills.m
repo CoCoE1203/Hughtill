@@ -68,7 +68,7 @@
     
     if (isWidth)
     {
-        float ratio = [Htills getImageSizeWidthRatio:image];
+        float ratio = [Htills getImageWidthRatio:image];
         imageSize = CGSizeMake(image.size.width * ratio,
                                image.size.height * ratio);
     }
