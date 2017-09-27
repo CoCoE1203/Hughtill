@@ -17,6 +17,7 @@
     return copyOfView;
 }
 
+/*
 + (UIImage*) imageSizeToDevice:(UIImage*)image
 {
     float imageWidth    = image.size.width;
@@ -28,11 +29,9 @@
     float ratioWidth    = (imageWidth/deviceWidth);
     float ratioHeight   = (imageHeight/deviceHeight);
     
-    
-    
     return image;
 }
-
+*/
 + (float) getImageSizeWidthRatio:(UIImage*)image
 {
     float imageWidth    = image.size.width;
