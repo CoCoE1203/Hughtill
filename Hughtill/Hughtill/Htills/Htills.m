@@ -32,6 +32,7 @@
     return image;
 }
 */
+
 + (float) getImageSizeWidthRatio:(UIImage*)image
 {
     float imageWidth    = image.size.width;
