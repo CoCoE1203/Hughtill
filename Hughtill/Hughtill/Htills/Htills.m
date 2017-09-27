@@ -37,7 +37,7 @@
 {
     float imageWidth    = image.size.width;
     float deviceWidth   = [[UIScreen mainScreen] bounds].size.width;
-    float ratioWidth    = (imageWidth/deviceWidth);
+    float ratioWidth    = (deviceWidth/imageWidth);
     return ratioWidth;
 }
 
@@ -45,7 +45,7 @@
 {
     float imageHeight    = image.size.height;
     float deviceHeight   = [[UIScreen mainScreen] bounds].size.height;
-    float ratioHeight    = (imageHeight/deviceHeight);
+    float ratioHeight    = (deviceHeight/imageHeight);
     return ratioHeight;
 }
 
