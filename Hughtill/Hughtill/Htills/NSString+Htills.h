@@ -29,5 +29,13 @@
 //문자열안의 특정 텍스트 폰트 변경
 - (NSAttributedString*) setCertainStringChangeFontWithString:(NSString*)string font:(UIFont*)font;
 
+//천단위 , 붙여주기 [ex) 10,000]
+- (NSString*) moneyLine;
+
+//자간
+- (NSAttributedString*) setLetterSpaceWithSize:(CGFloat)size;
+
+//특정범위 자간
+- (NSAttributedString*) setLetterSpaceWithSize:(CGFloat)size rangeString:(NSString*)string;
 
 @end

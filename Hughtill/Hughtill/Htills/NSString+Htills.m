@@ -56,7 +56,6 @@
 //문자열안의 특정 텍스트 폰트 변경
 - (NSAttributedString*) setCertainStringChangeFontWithString:(NSString*)string font:(UIFont*)font
 {
-    
     //문자열 설정
     NSMutableAttributedString* att = [[NSMutableAttributedString alloc] initWithString:self];
     
@@ -72,5 +71,42 @@
     //설정내용으로 라벨 변경
     //[label setAttributedText:att];//적용법
 }
+
+//천단위 , 붙여주기 [ex) 10,000]
+- (NSString*) moneyLine
+{
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setGroupingSeparator:@","];
+    [numberFormatter setGroupingSize:3];
+    [numberFormatter setUsesGroupingSeparator:YES];
+    [numberFormatter setNumberStyle:NSNumberFormatterDecimalStyle];
+    NSString *theString = [numberFormatter stringFromNumber:[NSNumber numberWithDouble:self.doubleValue]];
+    return theString;
+}
+
+//자간
+- (NSAttributedString*) setLetterSpaceWithSize:(CGFloat)size
+{
+    return [self setLetterSpaceWithSize:size rangeString:self];
+}
+
+//특정범위 자간
+- (NSAttributedString*) setLetterSpaceWithSize:(CGFloat)size rangeString:(NSString*)string
+{
+    //문자열 설정
+    NSMutableAttributedString* att = [[NSMutableAttributedString alloc] initWithString:self];
+    
+    //변화시킬 범위를 설정
+    NSRange range = [self rangeOfString:string];
+
+    [att addAttribute:NSKernAttributeName
+                value:[NSNumber numberWithFloat:size]
+                range:range];
+    
+    return att;
+    //설정내용으로 라벨 변경
+    //[label setAttributedText:att];//적용법
+}
+
 
 @end
