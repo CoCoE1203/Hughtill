@@ -83,6 +83,66 @@
     
     return imageSize;
 }
+
+//null check
++ (id) requestDecode:(id)responseObject
+{
+    if ([responseObject isKindOfClass:[NSArray class]] || [responseObject isKindOfClass:[NSMutableArray class]])
+    {
+        NSMutableArray* decodeArray = [NSMutableArray new];
+        for (id value in responseObject)
+        {
+            [decodeArray addObject:[Htills checkWithNullData:value]];
+        }
+        return decodeArray;
+    }
+    
+    else if ([responseObject isKindOfClass:[NSMutableDictionary class]] || [responseObject isKindOfClass:[NSDictionary class]])
+    {
+        NSMutableDictionary* decodeDictionary = [NSMutableDictionary new];
+        NSDictionary* object = responseObject;
+        NSArray* objectValue = object.allValues;
+        NSArray* objectKeys  = object.allKeys;
+        
+        int count = 0;
+        for (id value in objectValue)
+        {
+            [decodeDictionary setObject:[Htills checkWithNullData:value] forKey:objectKeys[count]];
+            count++;
+        }
+        
+        
+        return decodeDictionary;
+    }
+    
+    else return nil;
+}
+
++ (id) checkWithNullData:(id)value
+{
+    if ([Htills checkStringValue:value])
+    {
+        //null check 빈값이 들어왔습니다
+        return [NSNull null];
+    }
+    return value;
+}
+
++ (BOOL) checkStringValue:(id)value
+{
+    if ([value isKindOfClass:[NSString class]])
+    {
+        NSString* stringValue = value;
+        if (stringValue.length <= 0) return NO;
+        
+        if (    [value isEqualToString:@"null"]     ||
+                [value isEqualToString:@"NULL"]     ||
+                [value isEqualToString:@"<null>"]   ||
+                [value isEqualToString:@"<NULL>"]   )   return YES;
+    }
+    return NO;
+}
+
 @end
 
 

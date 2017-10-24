@@ -23,4 +23,8 @@
 //이미지의 가로사이즈가 크면 가로사이즈의 비율만큼 Size반환, 세로가 크다면 세로비율만큼 Size반환
 + (CGSize) getImageRatioSize:(UIImage*)image;
 //]
+
+//null check 서버에서 내려주는 null, @"null"
++ (id) requestDecode:(id)responseObject;
+
 @end
