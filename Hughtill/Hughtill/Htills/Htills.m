@@ -107,6 +107,10 @@
         int count = 0;
         for (id value in objectValue)
         {
+            if ([value isKindOfClass:[NSMutableDictionary class]] || [value isKindOfClass:[NSDictionary class]])
+            {
+                
+            }
             [decodeDictionary setObject:[Htills checkWithNullData:value] forKey:objectKeys[count]];
             count++;
         }
