@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NSString+Htills.h"
+#import "Htills.h"
 
 @interface ViewController ()
 
@@ -17,10 +18,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    
 }
 
+- (void) viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
+    [button setCenter:self.view.center];
+    [button addTarget:self action:@selector(show) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+}
+
+- (void) show
+{
+
+    [Htills makeCenterAlertWithViewController:self title:@"t" message:@"m" handler:^(UIAlertAction * _Nullable action) {
+        
+        NSLog(@"test1");
+    }];
+    
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
