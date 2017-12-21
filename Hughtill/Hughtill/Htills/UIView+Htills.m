@@ -10,30 +10,6 @@
 
 @implementation UIView(Htills)
 
-//[data 17.12.21 Hugh
-- (void) setData:(NSDictionary *)data
-{
-    objc_setAssociatedObject(self, @selector(data), data, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-}
-
-- (NSDictionary*)data
-{
-    NSDictionary *data = objc_getAssociatedObject(self, @selector(data));
-    if (data) {
-        return data;
-    }
-    
-    objc_setAssociatedObject(self, @selector(data), @{}, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    return self.data;
-}
-
-- (void) setObject:(nonnull id)object forKey:(nonnull id<NSCopying>)key
-{
-    NSMutableDictionary* dicData = [self.data mutableCopy];
-    [dicData setObject:object forKey:key];
-    self.data = dicData;
-}
-//]
 
 //[FadeAnimataion 17.12.21 Hugh
 - (void)setDuration:(float)Duration {
@@ -105,4 +81,30 @@
                      completion:completion];
 }
 //]
+
+//[Data 17.12.21 Hugh
+- (void) setData:(NSDictionary *)data
+{
+    objc_setAssociatedObject(self, @selector(data), data, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (NSDictionary*)data
+{
+    NSDictionary *data = objc_getAssociatedObject(self, @selector(data));
+    if (data) {
+        return data;
+    }
+    
+    objc_setAssociatedObject(self, @selector(data), @{}, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    return self.data;
+}
+
+- (void) setObject:(nonnull id)object forKey:(nonnull id<NSCopying>)key
+{
+    NSMutableDictionary* dicData = [self.data mutableCopy];
+    [dicData setObject:object forKey:key];
+    self.data = dicData;
+}
+//]
+
 @end
