@@ -20,6 +20,9 @@
 //문자열안의 특정 텍스트(before)를 변경(afterString)
 - (NSString*) setChangeString:(NSString*)beforeString afterString:(NSString*)afterString;
 
+//특정텍스트 삭제
+- (NSString*) removeString:(NSString*)string;
+
 //문자열안의 특정 텍스트(standard)를 기준으로 NSArray에 담기
 - (NSArray*) getDivisionStringWithStandardString:(NSString*)standardString;
 

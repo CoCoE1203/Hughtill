@@ -29,6 +29,12 @@
     return [self stringByReplacingOccurrencesOfString:beforeString withString:afterString];
 }
 
+//특정텍스트 삭제
+- (NSString*) removeString:(NSString*)string
+{
+    return [self stringByReplacingOccurrencesOfString:string withString:@""];
+}
+
 //문자열안의 특정 텍스트(standard)를 기준으로 NSArray에 담기
 - (NSArray*) getDivisionStringWithStandardString:(NSString*)standardString
 {

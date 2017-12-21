@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "NSString+Htills.h"
+#import "UIView+Htills.h"
 #import "Htills.h"
 
 @interface ViewController ()
@@ -26,17 +27,19 @@
     
     UIButton* button = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 100, 100)];
     [button setCenter:self.view.center];
-    [button addTarget:self action:@selector(show) forControlEvents:UIControlEventTouchUpInside];
+    [button addTarget:self action:@selector(btnAction:) forControlEvents:UIControlEventTouchUpInside];
+    [button setBackgroundColor:[UIColor greenColor]];
     [self.view addSubview:button];
+    
+    
+    UIView* fadeAnimationView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 50, 50)];
+    [fadeAnimationView setBackgroundColor:[UIColor grayColor]];
+    [fadeAnimationView FadeAnimationAutoSetDuration:0.3f];
+    [self.view addSubview:fadeAnimationView];
 }
 
-- (void) show
+- (void) btnAction:(UIButton*)button
 {
-
-    [Htills makeCenterAlertWithViewController:self title:@"t" message:@"m" handler:^(UIAlertAction * _Nullable action) {
-        
-        NSLog(@"test1");
-    }];
     
 }
 

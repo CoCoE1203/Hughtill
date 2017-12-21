@@ -1,9 +1,9 @@
 Pod::Spec.new do |s|
   s.name         = "Hughtill"
-  s.version      = "0.2.6"
-  s.summary      = "Hugh Skill in Hughtill"
+  s.version      = "0.2.7"
+  s.summary      = "Im iOS developer"
   s.description      = <<-DESC
-					Simple test the PodRegistTest!!!
+					Simple test the PodRegistTest
                       DESC
   s.homepage         = 'https://github.com/CoCoE1203/Hughtill.git'
   #s.screenshots      = 'https://magi82.github.io/images/01.png'

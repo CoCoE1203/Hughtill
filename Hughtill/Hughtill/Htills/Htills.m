@@ -302,19 +302,6 @@
     [viewController presentViewController:alert animated:YES completion:nil];
 }
 
-//3. more selectbutton
-+ (void) makeMoreAlertWith:(UIViewController*_Nonnull)viewController
-                     title:(NSString*_Nullable)title
-                   message:(NSString*_Nullable)message
-                   handler:(void (^ __nullable)(UIAlertAction * _Nullable action))handler,...
-{
-    UIAlertController* alertController = [UIAlertController alertControllerWithTitle:title message:message preferredStyle:UIAlertControllerStyleAlert];
-    
-    [alertController addAction:[UIAlertAction actionWithTitle:@"전체 지점" style:UIAlertActionStyleDefault handler:handler]];
-
-    [viewController presentViewController:alertController animated:YES completion:nil];
-}
-
 @end
 
 
