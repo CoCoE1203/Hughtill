@@ -7,6 +7,14 @@
 
 개인용으로 사용하는 소스입니다.
 
+##Detail
+* Object
+  - Htills
+* Category
+  - NSString+Htills
+  - UITableView+Htills
+  - UIView+Htills
+
 ## Authors
 * CoCoE = Hugh ([@Tistory](http://goldcocoe.tistory.com/category/CocoaPods/Hughtill))
 
