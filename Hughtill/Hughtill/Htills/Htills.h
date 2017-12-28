@@ -11,6 +11,13 @@
 @interface Htills : NSObject
 
 /**
+ 2017.12.28 Hugh
+ 1 - 네비게이션의 첫번째 페이지를 불러옵니다
+ Push Landing 할때 만들었습니다.
+ */
++ (void) loadFirstPage;
+
+/**
  View Copy
  어느 것이든 UI에 해당한다면 복제해줍니다.
  */

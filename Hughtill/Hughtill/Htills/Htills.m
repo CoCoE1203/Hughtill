@@ -10,6 +10,33 @@
 
 @implementation Htills
 
+/**
+ 2017.12.28 Hugh
+ 1 - 네비게이션의 첫번째 페이지로 이동합니다.
+ Push Landing 할때 만들었습니다.
+ */
++ (void) loadFirstPage
+{
+    @try
+    {    
+        UINavigationController* navigationController = (UINavigationController*)[[[UIApplication sharedApplication] delegate].window rootViewController];
+        [navigationController setViewControllers:@[navigationController.viewControllers.firstObject]];
+        //]
+        [[[UIApplication sharedApplication] delegate].window setRootViewController:navigationController];
+    }
+    @catch (NSException *exception)
+    {
+        UIViewController* viewController = (UIViewController*)[[[UIApplication sharedApplication] delegate].window rootViewController];
+        [viewController.navigationController setViewControllers:@[viewController.navigationController.viewControllers.firstObject]];
+        //]
+        [[[UIApplication sharedApplication] delegate].window setRootViewController:viewController.navigationController];
+    }
+    @finally
+    {
+        
+    }
+}
+
 //clone create
 + (id) copy:(id)object
 {
