@@ -11,6 +11,16 @@
 @implementation Htills
 
 /**
+ 2018.01.03 Hugh
+ 1 - Array의 값을 바꿉니다.
+ */
++ (void) mutableArray:(NSMutableArray*)array ChangeObject:(id)object Index:(NSInteger)index
+{
+    [array removeObjectAtIndex:index];
+    [array insertObject:object atIndex:index];
+}
+
+/**
  2017.12.28 Hugh
  1 - 네비게이션의 첫번째 페이지로 이동합니다.
  Push Landing 할때 만들었습니다.
@@ -248,7 +258,6 @@
 }
 
 //alert
-
 + (void) makeBottomAlertWithViewController:(UIViewController*_Nonnull)viewController
                                      title:(NSString*_Nullable)title
                                    message:(NSString*_Nullable)message

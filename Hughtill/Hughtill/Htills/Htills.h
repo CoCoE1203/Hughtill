@@ -11,6 +11,12 @@
 @interface Htills : NSObject
 
 /**
+ 2018.01.03 Hugh
+ 1 - Array의 값을 바꿉니다.
+ */
++ (void) mutableArray:(NSMutableArray*)array ChangeObject:(id)object Index:(NSInteger)index;
+
+/**
  2017.12.28 Hugh
  1 - 네비게이션의 첫번째 페이지를 불러옵니다
  Push Landing 할때 만들었습니다.
