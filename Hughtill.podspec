@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
                        
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author             = { "dragoaa90@gmail.com" => "dragoa90@gmail.com" }
-  s.source       = { :git => "https://github.com/CoCoE1203/Hughtill.git", :tag => s.version }
+  s.source       = { :git => "https://github.com/CoCoE1203/Hughtill.git", :tag => s.version.to_s }
   s.ios.deployment_target = '7.0'
   s.source_files = 'Hughtill/Hughtill/Htills/*.{h,m}'
   s.requires_arc = true
