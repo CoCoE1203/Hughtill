@@ -11,7 +11,6 @@ s.homepage      = 'https://github.com/CoCoE1203/Hughtill.git'
 s.license       = { :type => 'MIT', :file => 'LICENSE' }
 s.author        = { "dragoaa90@gmail.com" => "dragoa90@gmail.com" }
 s.source       	= { :git => "https://github.com/CoCoE1203/Hughtill.git", :tag => v#{s.version} }
-s.ios.deployment_target = '7.0'
 s.source_files 	= 'Hughtill/Hughtill/Htills/*.{h,m}'
 s.requires_arc 	= true
 
