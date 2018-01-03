@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Hughtill"
-  s.version      = "0.2.56"
+  s.version      = "0.2.57"
   s.summary      = "Im iOS developer"
   s.description      = <<-DESC
 					Simple test the PodRegistTest
