@@ -7,6 +7,7 @@
 //
 
 #import "Htills.h"
+#import "UIWindow+Htills.h"
 
 @implementation Htills
 
@@ -27,19 +28,20 @@
  */
 + (void) loadFirstPage
 {
+    id window = [[UIApplication sharedApplication] delegate].window;
     @try
-    {    
-        UINavigationController* navigationController = (UINavigationController*)[[[UIApplication sharedApplication] delegate].window rootViewController];
+    {
+        UINavigationController* navigationController = (UINavigationController*)[window rootViewController];
         [navigationController setViewControllers:@[navigationController.viewControllers.firstObject]];
-        //]
-        [[[UIApplication sharedApplication] delegate].window setRootViewController:navigationController];
+        [[window visibleViewController].navigationController popViewControllerAnimated:YES];
+        [window setRootViewController:navigationController];
     }
     @catch (NSException *exception)
     {
-        UIViewController* viewController = (UIViewController*)[[[UIApplication sharedApplication] delegate].window rootViewController];
+        UIViewController* viewController = (UIViewController*)[window rootViewController];
         [viewController.navigationController setViewControllers:@[viewController.navigationController.viewControllers.firstObject]];
-        //]
-        [[[UIApplication sharedApplication] delegate].window setRootViewController:viewController.navigationController];
+        [viewController.navigationController popViewControllerAnimated:YES];
+        [window setRootViewController:viewController.navigationController];
     }
     @finally
     {

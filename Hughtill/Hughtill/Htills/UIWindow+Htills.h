@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIWindow_Htills : UIWindow
+@interface UIWindow(Htills)
 - (UIViewController *) visibleViewController;
 @end
