@@ -26,26 +26,23 @@
  1 - 네비게이션의 첫번째 페이지로 이동합니다.
  Push Landing 할때 만들었습니다.
  */
-+ (void) loadFirstPage
++ (void) popToRootViewControllerAnimation:(BOOL)animation
 {
     id window = [[UIApplication sharedApplication] delegate].window;
-    @try
+    BOOL iHaveNavigationController = [window visibleViewController].navigationController;
+    
+    if (iHaveNavigationController)
     {
-        UINavigationController* navigationController = (UINavigationController*)[window rootViewController];
-        [navigationController setViewControllers:@[navigationController.viewControllers.firstObject]];
-        [[window visibleViewController].navigationController popViewControllerAnimated:YES];
-        [window setRootViewController:navigationController];
+        //Navigation있을때
+        [[window visibleViewController].navigationController popToRootViewControllerAnimated:YES];
     }
-    @catch (NSException *exception)
+    else
     {
-        UIViewController* viewController = (UIViewController*)[window rootViewController];
-        [viewController.navigationController setViewControllers:@[viewController.navigationController.viewControllers.firstObject]];
-        [viewController.navigationController popViewControllerAnimated:YES];
-        [window setRootViewController:viewController.navigationController];
-    }
-    @finally
-    {
-        
+        //Navigation없을때
+        [[window visibleViewController] dismissViewControllerAnimated:animation
+                                                           completion:^{
+                                                               [window setRootViewController:[window visibleViewController]];
+                                                           }];
     }
 }
 

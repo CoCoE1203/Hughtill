@@ -21,7 +21,8 @@
  1 - 네비게이션의 첫번째 페이지를 불러옵니다
  Push Landing 할때 만들었습니다.
  */
-+ (void) loadFirstPage;
++ (void) popToRootViewControllerAnimation:(BOOL)animation;
+
 
 /**
  View Copy
