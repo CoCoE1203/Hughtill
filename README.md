@@ -18,6 +18,7 @@
   - NSString+Htills
   - UITableView+Htills
   - UIView+Htills
+  - UIWindow+Htills
 
 ## Authors
 

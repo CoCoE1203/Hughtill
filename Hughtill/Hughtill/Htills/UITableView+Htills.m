@@ -28,5 +28,4 @@
     return [cell convertRect:[cell bounds] toView:[self window]].origin;
 }
 
-
 @end

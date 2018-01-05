@@ -28,10 +28,14 @@
     self.TableView.estimatedRowHeight = 80;
 
     [self.tableData addObject:@{
+                                @"title":
+                                    @"공지사항 제목",
                                 @"detail":
                                 @"공지사항 내용"
                                 }];
     [self.tableData addObject:@{
+                                @"title":
+                                    @"공지사항 제목",
                                 @"detail":
                                 @"공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용공지사항 내용"
                                 }];
@@ -53,19 +57,21 @@
         [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
         UILabel* textLabel = [cell.contentView viewWithTag:100];
         [textLabel setText:[data objectForKey:@"detail"]];
+        UILabel* titleLabel = [cell.contentView viewWithTag:200];
+        [titleLabel setText:[data objectForKey:@"title"]];
         return cell;
     }
     else
     {
         UITableViewCell* cell = [tableView dequeueReusableCellWithIdentifier:@"closeCell"];
         [cell setSelectionStyle:UITableViewCellSelectionStyleGray];
+        UILabel* titleLabel = [cell.contentView viewWithTag:200];
+        [titleLabel setText:[data objectForKey:@"title"]];
         return cell;
     }
     
     return [UITableViewCell new];
 }
-
-
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
