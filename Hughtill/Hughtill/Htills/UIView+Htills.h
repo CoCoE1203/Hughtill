@@ -19,6 +19,7 @@
  */
 - (void) setObject:(nonnull id)object forKey:(nonnull id<NSCopying>)key;
 @property (nonatomic, strong) NSDictionary* _Nullable data;
+- (nonnull id) objectForKey:(nonnull NSString*)key;
 
 //[
 /**

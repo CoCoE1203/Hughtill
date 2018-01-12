@@ -28,21 +28,24 @@
  */
 + (void) popToRootViewControllerAnimation:(BOOL)animation
 {
-    id window = [[UIApplication sharedApplication] delegate].window;
-    BOOL iHaveNavigationController = [window visibleViewController].navigationController;
-    
-    if (iHaveNavigationController)
+    if (@available(iOS 5.0, *))
     {
-        //Navigation있을때
-        [[window visibleViewController].navigationController popToRootViewControllerAnimated:YES];
-    }
-    else
-    {
-        //Navigation없을때
-        [[window visibleViewController] dismissViewControllerAnimated:animation
-                                                           completion:^{
-                                                               [window setRootViewController:[window visibleViewController]];
-                                                           }];
+        id window = [[UIApplication sharedApplication] delegate].window;
+        BOOL iHaveNavigationController = [window visibleViewController].navigationController;
+        
+        if (iHaveNavigationController)
+        {
+            //Navigation있을때
+            [[window visibleViewController].navigationController popToRootViewControllerAnimated:YES];
+        }
+        else
+        {
+            //Navigation없을때
+            [[window visibleViewController] dismissViewControllerAnimated:animation
+                                                               completion:^{
+                                                                   [window setRootViewController:[window visibleViewController]];
+                                                               }];
+        }
     }
 }
 
@@ -154,35 +157,39 @@
 
 + (id) checkDictionary:(id)dictionary
 {
-    if ([dictionary isKindOfClass:[NSMutableDictionary class]] || [dictionary isKindOfClass:[NSDictionary class]])
+    if (@available(iOS 6.0, *))
     {
-        NSMutableDictionary* decodeDictionary = [NSMutableDictionary new];
-        NSDictionary* object = dictionary;
-        NSArray* objectValue = object.allValues;
-        NSArray* objectKeys  = object.allKeys;
-        
-        int count = 0;
-        for (id value in objectValue)
+        if ([dictionary isKindOfClass:[NSMutableDictionary class]] || [dictionary isKindOfClass:[NSDictionary class]])
         {
-            if ([value isKindOfClass:[NSMutableDictionary class]] || [value isKindOfClass:[NSDictionary class]])
+            NSMutableDictionary* decodeDictionary = [NSMutableDictionary new];
+            NSDictionary* object = dictionary;
+            NSArray* objectValue = object.allValues;
+            NSArray* objectKeys  = object.allKeys;
+            
+            int count = 0;
+            for (id value in objectValue)
             {
-                //dictionary안에 dictionary발견
-                [decodeDictionary setObject:[Htills checkDictionary:value] forKey:objectKeys[count]];
+                if ([value isKindOfClass:[NSMutableDictionary class]] || [value isKindOfClass:[NSDictionary class]])
+                {
+                    //dictionary안에 dictionary발견
+                    [decodeDictionary setObject:[Htills checkDictionary:value] forKey:objectKeys[count]];
+                }
+                else if ([value isKindOfClass:[NSMutableArray class]] || [value isKindOfClass:[NSArray class]])
+                {
+                    //dictionary안에 array발견
+                    [decodeDictionary setObject:[Htills checkArray:value] forKey:objectKeys[count]];
+                }
+                else
+                    [decodeDictionary setObject:[Htills checkWithNullData:value] forKey:objectKeys[count]];
+                count++;
             }
-            else if ([value isKindOfClass:[NSMutableArray class]] || [value isKindOfClass:[NSArray class]])
-            {
-                //dictionary안에 array발견
-                [decodeDictionary setObject:[Htills checkArray:value] forKey:objectKeys[count]];
-            }
-            else
-                [decodeDictionary setObject:[Htills checkWithNullData:value] forKey:objectKeys[count]];
-            count++;
+            
+            return decodeDictionary;
+            
         }
-        
-        return decodeDictionary;
-        
+        else return dictionary;
     }
-    else return dictionary;
+    return dictionary;
 }
 
 + (id) checkArray:(id)array
@@ -244,14 +251,16 @@
 {
     CGSize constraint = CGSizeMake(label.frame.size.width, CGFLOAT_MAX);
     CGSize size;
-    
-    NSStringDrawingContext *context = [[NSStringDrawingContext alloc] init];
-    CGSize boundingBox = [label.text boundingRectWithSize:constraint
-                                                  options:NSStringDrawingUsesLineFragmentOrigin
-                                               attributes:@{NSFontAttributeName:label.font}
-                                                  context:context].size;
-    
-    size = CGSizeMake(ceil(boundingBox.width), ceil(boundingBox.height));
+    if (@available(iOS 6.0, *))
+    {
+        NSStringDrawingContext *context = [[NSStringDrawingContext alloc] init];
+        CGSize boundingBox = [label.text boundingRectWithSize:constraint
+                                                      options:NSStringDrawingUsesLineFragmentOrigin
+                                                   attributes:@{NSFontAttributeName:label.font}
+                                                      context:context].size;
+        
+        size = CGSizeMake(ceil(boundingBox.width), ceil(boundingBox.height));
+    }
     
     return size.height;
 }
@@ -293,11 +302,13 @@
                                   alertControllerWithTitle:title
                                   message:message
                                   preferredStyle:UIAlertControllerStyleAlert];
-    
-    [viewController presentViewController:alert animated:YES completion:nil];
-    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [alert dismissViewControllerAnimated:YES completion:nil];
-    });
+    if (@available(iOS 5.0, *))
+    {
+        [viewController presentViewController:alert animated:YES completion:nil];
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delay * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+            [alert dismissViewControllerAnimated:YES completion:nil];
+        });
+    }
 }
 
 //2. normal style (OK)
@@ -307,34 +318,38 @@
                              handler:(void (^ __nullable)(UIAlertAction * _Nullable action))handler
                                style:(UIAlertControllerStyle)style
 {
-    UIAlertController * alert=   [UIAlertController
-                                  alertControllerWithTitle:title
-                                  message:message
-                                  preferredStyle:style];
-    
-    UIAlertAction* ok = [UIAlertAction
-                         actionWithTitle:@"OK"
-                         style:UIAlertActionStyleDefault
-                         handler:^(UIAlertAction * action)
-                         {
-                             if (handler)
-                                 handler(action);
-                             
-                             [alert dismissViewControllerAnimated:YES completion:nil];
-                         }];
-    
-    UIAlertAction* cancel = [UIAlertAction
-                             actionWithTitle:@"Cancel"
+    if (@available(iOS 5.0, *))
+    {
+        UIAlertController * alert=   [UIAlertController
+                                      alertControllerWithTitle:title
+                                      message:message
+                                      preferredStyle:style];
+        
+        UIAlertAction* ok = [UIAlertAction
+                             actionWithTitle:@"OK"
                              style:UIAlertActionStyleDefault
                              handler:^(UIAlertAction * action)
                              {
+                                 if (handler)
+                                     handler(action);
+                                 
                                  [alert dismissViewControllerAnimated:YES completion:nil];
                              }];
-    
-    [alert addAction:ok];
-    [alert addAction:cancel];
-    
-    [viewController presentViewController:alert animated:YES completion:nil];
+        
+        UIAlertAction* cancel = [UIAlertAction
+                                 actionWithTitle:@"Cancel"
+                                 style:UIAlertActionStyleDefault
+                                 handler:^(UIAlertAction * action)
+                                 {
+                                     [alert dismissViewControllerAnimated:YES completion:nil];
+                                 }];
+        
+        [alert addAction:ok];
+        [alert addAction:cancel];
+        
+        [viewController presentViewController:alert animated:YES completion:nil];
+
+    }
 }
 
 @end

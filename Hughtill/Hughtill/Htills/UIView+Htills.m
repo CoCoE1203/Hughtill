@@ -103,7 +103,12 @@
 {
     NSMutableDictionary* dicData = [self.data mutableCopy];
     [dicData setObject:object forKey:key];
+    [dicData objectForKey:@""];
     self.data = dicData;
+}
+- (id) objectForKey:(nonnull NSString*)key
+{
+    return [self.data objectForKey:key];
 }
 //]
 
